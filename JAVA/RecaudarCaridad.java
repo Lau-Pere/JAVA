@@ -6,15 +6,15 @@ public class RecaudarCaridad {
         int personasAyudaron = 0;
         int dineroRecaudado = 0;
         String respuesta;
-        System.out.println("¿Una ayudita? (sí/no)");
+        System.out.println("¿Una ayudita? (si/no)");
         respuesta = scanner.nextLine();
-        while (respuesta.equals("sí")) {
+        while (respuesta.equals("si")) {
             System.out.println("¿Cuánto quieres donar?");
             int donacion = scanner.nextInt();
             scanner.nextLine();
             personasAyudaron = personasAyudaron + 1;
             dineroRecaudado = dineroRecaudado + donacion;
-            System.out.println("¿Una ayudita? (sí/no)");
+            System.out.println("¿Una ayudita? (si/no)");
             respuesta = scanner.nextLine();
         }
         System.out.println("Te deprimes y te vas para tu casa.");
